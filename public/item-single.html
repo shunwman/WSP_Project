@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Lost and Found</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.jpeg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <!-- Template Main CSS File -->
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- ==================================Tecky CSS ===============================-->
+
+  <link rel="stylesheet" href="assets/css/map.css">
+  <link rel="stylesheet" href="assets/css/search.css">
+  <!-- =======================================================
+  * Template Name: EstateAgency - v4.8.0
+  * Template URL: https://bootstrapmade.com/real-estate-agency-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+  <!-- ======= Listing Items Section ======= -->
+  <div class="click-closed"></div>
+
+  <!--/ List Item /-->
+  <div class="box-collapse">
+    <div class="title-box-d">
+      <h3 class="title-d">List Your Item</h3>
+    </div>
+    <span class="close-box-collapse right-boxed bi bi-x"></span>
+    <div class="box-collapse-wrap form">
+      <form class="form-a item-wall-form">
+        <div class="row">
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="Type">Lost/Found</label>
+              <select class="form-control form-select form-control-a" name="type" id="Type" required>
+                <option value="lost">Lost</option>
+                <option value="found">Found</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-12 mb-2">
+            <div class="form-group">
+              <label class="pb-2" for="Type">Name of your item</label>
+              <input type="text" class="form-control form-control-lg form-control-a" name="name" maxlength="255"
+                placeholder="e.g. Brand ABC pencil" required>
+            </div>
+          </div>
+          <div class="col-md-12 mb-2">
+            <div class="form-group">
+              <label class="name" for="text">Description</label>
+              <textarea type="text" name="description" minlength="" maxlength="1000"
+                class="form-control form-control-lg form-control-a" placeholder="feature of your item?"></textarea>
+            </div>
+          </div>
+          <div class="col-md-12 mb-2">
+            <div class="form-group">
+              <label class="pb-2" for="Type">Location of the item</label>
+              <input type="text" class="form-control form-control-lg form-control-a" name="location" minlength=""
+                maxlength="255" placeholder="e.g. Bonham Strand West 59-67 Sheung Wan">
+            </div>
+          </div>
+          <div class="col-md-12 mb-2">
+            <div class="form-group">
+              <label class="pb-2" for="Type">Happened Date</label>
+              <input type="timestamp" class="form-control form-control-lg form-control-a" name="happened_at"
+                placeholder="time">
+            </div>
+          </div>
+          <div class="col-md-12 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="Type">Categories</label>
+              <select class="form-control form-select form-control-a" name="categoryId" id="Type">
+                <!-- <option>Accessory</option>
+                <option>Bags</option>
+                <option>Book & Stationery</option>
+                <option>Clothes</option>
+                <option>Documents</option> -->
+                <option value="1">Electronic Products</option>
+                <option value="2">Animal</option>
+                <!-- <option>Pets</option>
+                <option>Others</option> -->
+
+              </select>
+            </div>
+          </div>
+          <div class="col-md-12 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="Type">Free/Reward</label>
+              <select class="form-control form-select form-control-a" name="isFree" id="Type" required>
+                <option value="true">Free</option>
+                <option value="false">Reward</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- <div class="col-md-12 mb-2">
+            <div class="form-group">
+              <label class="pb-2" for="Type">Reward (HKD)</label>
+              <input type="text" class="form-control form-control-lg form-control-a" placeholder="e.g. 100">
+            </div>
+          </div> -->
+          <div class="input-file">
+            <input type="file" name="image" />
+          </div>
+
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-b submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div><!-- End Property Search Section -->
+
+
+
+  <!-- ======= Header/Navbar ======= -->
+
+
+
+  <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+    <div class="container">
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a class="navbar-brand text-brand" href="index.html">Lost<span class="color-b">Found</span></a>
+
+      <div class="navbar-collapse collapse justify-content-between" id="navbarDefault">
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <!--useless page
+          <li class="nav-item">
+            <a class="nav-link " href="about.html">About</a>
+          </li>
+--><!--useless page
+          <li class="nav-item">
+            <a class="nav-link " href="items-grid.html">Items</a>
+          </li>-->
+
+          <li class="nav-item">
+            <a class="nav-link " href="hero.html">Hero</a>
+          </li>
+          <div class="display-user-function">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">User</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item " href="yourPosts.html">Your Posts</a>
+                <a class="dropdown-item " href="profile.html">Profile</a>
+              </div>
+            </li>
+          </div>
+          <!--useless page
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">Pages</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item " href="item-single.html">Property Single</a>
+            <a class="dropdown-item " href="blog-single.html">Blog Single</a>
+            <a class="dropdown-item " href="agents-grid.html">Agents Grid</a>
+            <a class="dropdown-item " href="agent-single.html">Agent Single</a>
+          </div>
+        </li>
+-->
+          <div class="display-login">
+            <li class="nav-item">
+              <a class="nav-link " href="login.html" id="login-page-button">Login</a>
+            </li>
+          </div>
+          <div class="display-logout">
+            <li class="nav-item">
+              <a class="nav-link " href="index.html" id="logout-button">Logout</a>
+            </li>
+          </div>
+        </ul>
+        <ul class="userContainer">
+          <li class="iconNotifi" onclick="toggleNotifi()"><img src="assets/img/bell.png" alt=""><span>17</span></li>
+          <li>
+            <p>Username</p>
+          </li>
+          <li>
+            <div class="user-btn"></div>
+          </li>
+        </ul>
+        </ul>
+      </div>
+
+      <!-- List item toggle button -->
+      <div class="plusItemBTN">
+        <button type="button" class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse" data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01">
+          <i class="bi bi-plus-lg"></i>
+        </button>
+      </div>
+
+      <div class="notifi-box" id="box">
+        <h2>Recent 5 notification &nbsp&nbsp<a href="/notification.html"><span>see more...</span><a></h2>
+        <div class="notifi-item">
+
+        </div>
+      </div>
+  </nav><!-- End Header/Navbar -->
+
+
+  <main id="itemSingleMain">
+    <!-- ======= Intro Single ======= -->
+    <span class="item-description1">
+
+
+    </span>
+
+
+    <!-- ======= Property Single ======= -->
+    <section class="property-single nav-arrow-b">
+      <div class="container">
+        <span class="item-description2">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div id="property-single-carousel" class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="carousel-item-b swiper-slide">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0554/0787/0011/products/A1_5202e923-0064-45ca-ba20-9465209386a0_grande.jpg?v=1643718446"
+                      alt="">
+                  </div>
+                  <div class="carousel-item-b swiper-slide">
+                    <img
+                      src="http://cdn.shopify.com/s/files/1/0519/1742/2784/products/image_0303c306-a42f-43a1-860e-1183c2f8f832.jpg?v=1628841715"
+                      alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="property-single-carousel-pagination carousel-pagination"></div>
+            </div>
+          </div>
+        </span>
+
+        <div class="row">
+
+          <span class="item-description3">
+            <div class="col-sm-12">
+
+              <div class="row justify-content-between">
+                <div class="col-md-5 col-lg-4">
+                  <div class="property-price d-flex justify-content-center foo">
+                    <div class="card-header-c d-flex">
+                      <div class="card-box-ico">
+                        <span class="bi bi-cash">$</span>
+                      </div>
+                      <div class="card-title-c align-self-center">
+                        <h5 class="title-c">15000</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="property-summary">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="title-box-d section-t4">
+                          <h3 class="title-d">Quick Summary</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="summary-list">
+                      <ul class="list">
+                        <li class="d-flex justify-content-between">
+                          <strong>Name:</strong>
+                          <span>LULU</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          <strong>Item Type:</strong>
+                          <span>Lost</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          <strong>Category:</strong>
+                          <span>Animal</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          <strong>Location:</strong>
+                          <span>Aberdeen</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          <strong>Date:</strong>
+                          <span>13/9</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          <strong>Status:</strong>
+                          <span>Not Found</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-7 col-lg-7 section-md-t3">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="title-box-d">
+                        <h3 class="title-d">Item Description</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="property-description">
+                    <p class="description color-text-a">
+                      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec
+                      velit
+                      neque, auctor sit amet
+                      aliquam vel, ullamcorper sit amet ligula. Cras ultricies ligula sed magna dictum porta.
+                      Curabitur aliquet quam id dui posuere blandit. Mauris blandit aliquet elit, eget tincidunt
+                      nibh pulvinar quam id dui posuere blandit.
+                    </p>
+                    <p class="description color-text-a no-margin">
+                      Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Donec rutrum congue leo eget
+                      malesuada. Quisque velit nisi,
+                      pretium ut lacinia in, elementum id enim. Donec sollicitudin molestie malesuada.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </span>
+          <div class="col-md-10 offset-md-1">
+            <ul class="nav nav-pills-a nav-pills mb-3 section-t3" id="pills-tab" role="tablist">
+
+              <li class="nav-item">
+                <a class="nav-link" id="pills-map-tab" data-bs-toggle="pill" href="#pills-map" role="tab"
+                  aria-controls="pills-map" aria-selected="false">Show on Google Map</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+
+              <div class="map-main-container-single">
+                <div id="map-single" style="width: 100%;"></div>
+
+              </div>
+
+            </div>
+          </div>
+          <span class="owner-description">
+            <div class="col-md-12">
+              <div class="row section-t3">
+                <div class="col-sm-12">
+                  <div class="title-box-d">
+                    <h3 class="title-d">Contact Owner</h3>
+                  </div>
+                </div>
+              </div>
+              <span class="row">
+                <div class="col-md-6 col-lg-4">
+                  <img src="assets/img/agent-4.jpg" alt="" class="img-fluid">
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                  <div class="property-agent">
+                    <h4 class="title-agent">Anabella Geller</h4>
+                    <p class="color-text-a">
+                      Nulla porttitor accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula elementum sed sit
+                      amet
+                      dui. Quisque velit nisi,
+                      pretium ut lacinia in, elementum id enim.
+                    </p>
+                    <ul class="list-unstyled">
+                      <li class="d-flex justify-content-between">
+                        <strong>Phone:</strong>
+                        <span class="color-text-a">(222) 4568932</span>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <strong>Whatsapp:</strong>
+                        <span class="color-text-a">777 287 378 737</span>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <strong>Email:</strong>
+                        <span class="color-text-a">annabella@example.com</span>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <strong>Telegram:</strong>
+                        <span class="color-text-a">Annabela.ge</span>
+                      </li>
+                    </ul>
+                    <div class="socials-a">
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a href="#">
+                            <i class="bi bi-facebook" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="#">
+                            <i class="bi bi-twitter" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="#">
+                            <i class="bi bi-instagram" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="#">
+                            <i class="bi bi-linkedin" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12 col-lg-4">
+                  <div class="property-contact">
+                    <form class="form-a">
+                      <div class="row">
+                        <div class="col-md-12 mb-1">
+                          <div class="form-group">
+                            <textarea id="textMessage" class="form-control" placeholder="Comment *" name="message"
+                              cols="45" rows="8" required></textarea>
+                          </div>
+                        </div>
+                        <div class="col-md-12 mt-3">
+                          <button type="submit" class="btn btn-a" id="messageBtn">Send Message</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+            </div>
+          </span>
+        </div>
+      </div>
+      </div>
+
+    </section><!-- End Property Single-->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <span class="addFooter">
+    <section class="section-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 ">
+            <div class="widget-a">
+              <div class="w-header-a">
+                <h3 class="w-title-a text-brand">LostFound</h3>
+              </div>
+              <div class="w-body-a">
+                <p class="w-text-a color-text-a">
+                  We are a platform for posting lost and found items in Hong Kong.
+                </p>
+              </div>
+              <div class="w-footer-a">
+                <ul class="list-unstyled">
+                  <li class="color-a">
+                    <span class="color-text-a">Email .</span> lostfound@tecky.io
+                  </li>
+                  <li class="color-a">
+                    <span class="color-text-a">Phone .</span> +852 2319 3829
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+
+            <div class="socials-a">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="bi bi-facebook" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="bi bi-twitter" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="bi bi-instagram" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="bi bi-linkedin" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </footer>
+  </span><!-- End  Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/assets/js/item-single.js"></script>
+  <script src="assets/js/userAction.js"></script>
+  <!-- <script src="assets/js/main.js"></script> -->
+  <script src="assets/js/new-map.js"></script>
+  <script src="assets/js/footer.js"></script>
+
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&libraries=places&region=HK&language=en&callback=initialize2">
+    </script>
+
+</body>
+
+</html>

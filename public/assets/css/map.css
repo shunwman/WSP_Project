@@ -1,0 +1,115 @@
+
+
+
+
+  .ui-autocomplete-category {
+    font-weight: bold;
+    padding: .2em .4em;
+    margin: .8em 0 .2em;
+    line-height: 1.5;
+  }
+
+  .map-main-container-single{                                              
+    display: flex;
+    justify-content: center;
+  }
+  .map-main-container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .index-map-main-container{
+    display: flex;
+    justify-content: center;
+  }
+
+
+.map-search-input{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+  #map{
+    margin-top: 200px;
+ margin-bottom: 1rem;
+    width: 100%;
+    height: 50vh;
+  }
+
+  /* .hide{
+    display: none;
+  } */
+  
+  #map-form{
+    width: 100%;
+    height: 30vh;
+  }
+
+#map-single{
+  width: 100%;
+  height: 50vh;
+}
+
+#search-input-form{
+  margin-bottom: 1rem;
+}
+
+
+#search-input{
+ 
+  width: 100%;
+  padding: 0;
+  margin-top: 1rem;
+ height: 3rem;
+ }
+
+.search-frame{
+  display: flex;
+  justify-content: center;
+}
+
+.quicksearch{
+
+  /* display:inline-block; */
+  width: 100%;
+  box-sizing: border-box;
+  display:block;
+}
+
+.search-center{
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  margin: 1rem 0 0 0;
+}
+
+
+
+
+
+
+/*======================important====Google map inside lib ===================*/
+div.pac-container {
+  z-index: 99999999999 !important;
+}
+/*=================================important=======================*/
+
+.button:hover {
+  background-color: #8CF;
+  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+  color: #222;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: rgb(53, 207, 39);
+}
+
+.button.is-checked {
+  color: white;
+  /* text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8); */
+}
+
+.button:active {
+  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+}

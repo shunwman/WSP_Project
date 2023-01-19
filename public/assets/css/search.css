@@ -1,0 +1,17 @@
+
+
+.quicksearch{
+
+    /* display:inline-block; */
+    width: 100%;
+    box-sizing: border-box;
+    display:block;
+}
+
+.search-center{
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    margin: 1rem 0 0 0;
+}
+
